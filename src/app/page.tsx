@@ -39,9 +39,9 @@ async function Home() {
               | undefined;
           }) => {
             return (
-              <div className="align-element div-1">
+              <div key={item.id} className="align-element div-1">
                 <div className="flex  flex-wrap	gap-10">
-                  <Link key={item.id} href={`/product/${item.id}`}>
+                  <Link href={`/product/${item.id}`}>
                     <div className="card card-compact w-96 bg-base-100 shadow-xl mb-4 ">
                       <figure>
                         <img src={item.thumbnail} alt="Shoes" />
