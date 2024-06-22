@@ -23,7 +23,7 @@ async function SingaleProduct(params: ParamsInterface) {
   const product = await request(params.params.id);
   console.log(product);
   return (
-    <div>
+    <div key={product.id}>
       SingaleProduct - {params.params.id}
       <img
         src={product.thumbnail}
