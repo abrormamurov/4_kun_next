@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@layer components {
+  .align-element {
+    @apply max-w-7xl mx-auto px-4;
+  }
+}
+.div-1 {
+  display: flex;
+  ul {
+    display: flex;
+  }
+}
